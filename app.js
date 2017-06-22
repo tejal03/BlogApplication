@@ -7,7 +7,8 @@ var express     = require('express'),
 
 
 //mongoose.connect("mongodb://localhost/restful_blog_app");
-mongoose.connect("mongodb://scooby:scooby@ds153659.mlab.com:53659/restful_blog");
+//Add mlab user credential link
+mongoose.connect("mongodb:// ** add your credentials");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(methodOverride("_method"));
